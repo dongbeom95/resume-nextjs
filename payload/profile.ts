@@ -6,7 +6,7 @@ import { IProfile } from '../component/profile/IProfile';
 const profile: IProfile.Payload = {
   disable: false,
 
-  image: 'https://dongbeom95.github.io/static/image/1751332566840.jpeg',
+  image: 'asset/1751332566840.jpeg',
   name: {
     title: '김동범',
     small: '동범',
