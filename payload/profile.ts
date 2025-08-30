@@ -2,11 +2,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { IProfile } from '../component/profile/IProfile';
+import MyProfileImage from '../asset/1751332566840.jpeg';
 
 const profile: IProfile.Payload = {
   disable: false,
 
-  image: 'asset/1751332566840.jpeg',
+  image: MyProfileImage,
   name: {
     title: '김동범',
     small: '동범',
