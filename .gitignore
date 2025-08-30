@@ -104,3 +104,9 @@ dist
 .tern-port
 
 .DS_Store
+
+# Build output for GitHub Pages
+/docs
+
+# Local NPM configuration
+.npmrc
