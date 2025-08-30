@@ -1,37 +1,25 @@
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { IProfile } from '../component/profile/IProfile';
-import image from '../asset/sample_tux.png';
 
 const profile: IProfile.Payload = {
   disable: false,
 
-  // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image,
+  image: 'https://dongbeom95.github.io/static/image/1751332566840.jpeg',
   name: {
-    title: 'Tux Linux Penguin',
-    small: '(Tux)',
+    title: '김동범',
+    small: '',
   },
   contact: [
     {
-      title: 'tux@linux.org',
-      link: 'mailto:tux@linux.org',
+      title: 'rlavkgk123@naver.com',
+      link: 'rlavkgk123@naver.com',
       icon: faEnvelope,
     },
     {
-      title: 'Please contact me by email',
-      icon: faPhone,
-      badge: true,
-    },
-    {
-      link: 'https://github.com/uyu423/resume-nextjs',
-      icon: faGithub,
-    },
-    {
-      link: 'https://www.facebook.com/groups/ubuntu.ko',
-      icon: faFacebook,
+      link: 'https://www.linkedin.com/in/dongbeom-kim-719738308',
+      icon: faLinkedin,
     },
   ],
   notice: {
