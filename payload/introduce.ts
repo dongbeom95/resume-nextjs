@@ -1,17 +1,16 @@
 import { IIntroduce } from '../component/introduce/IIntroduce';
-import { lastestUpdatedAt } from '../package.json';
 
 const introduce: IIntroduce.Payload = {
   disable: false,
 
   contents: [
-    '웹/앱 서비스 백엔드 개발과 스타트업 개발자로서의 다양한 경험이 있습니다. Node.js, Java, Kotlin, MySQL, Redis, AWS 등을 사용하여 프로덕션 서비스를 설계, 개발, 운영한 경험으로 확장성과 유지 보수성이 높은 백엔드 아키텍처와 패턴을 위해 언제나 고민하고 있습니다.',
-    'In the world of zeros and ones, my expertise has been instrumental in pioneering advancements in Linux system engineering. My flippers have crafted meticulous kernel enhancements, each aimed at streamlining performance and bolstering security across distributed networks. I am known in the community for my ability to dive deep into complex codebases and emerge with pearls of innovation that drive the collective progress of Linux environments. Advocacy is also a part of my plumage – spreading the word about the virtues of open-source and encouraging the adoption of Linux, from personal desktops to corporate data centers. As a mentor, I have nurtured the growth of young hatchlings into seasoned professionals, contributing to the diversity and vitality of our ecosystem.',
+    '6년차 플랫폼 개발자로서 B2B 글로벌 솔루션을 설계·개발하며 다양한 경험을 쌓아왔습니다. 스크럼 마스터를 거쳐 현재는 Momentum Driver 직무를 수행하며, 조직이 앞으로 나아가야 할 방향을 제시하고 AI를 활용한 생산성 혁신을 선도하고 있습니다.',
+    '대규모 전사 시스템 전환·통합 프로젝트를 세 차례 총괄하여 성공적으로 수행한 경험이 있습니다. 불안정했던 인증 시스템을 30여 개 화이트라벨과 4개 리전으로 확장해 글로벌 플랫폼으로 성장시켰으며, 기존에 수일이 걸리던 고객 요구사항도 즉시 대응 가능한 아키텍처로 전환했습니다. 이 과정에서 스크럼 마스터로서 전사 대부분의 솔루션에 기여하는 다양한 팀들과 긴밀히 협업했습니다. 개발, 인프라, 보안, 운영 등 여러 조직과 함께 일정을 조율하고, 애자일 기반의 팀간 플래닝을 통해 진행 상황을 투명하게 공유하며 문제를 선제적으로 해결했습니다. 모든 팀이 목표에 집중할 수 있는 환경을 조성했고, 대규모 프로젝트를 안정적으로 완수할 수 있는 협업 문화를 정착시켰습니다.',
+    '현재는 LLM 기반 AI 도구와 n8n을 적극적으로 도입·내재화하며 조직의 프로세스 혁신을 주도하고 있습니다. 전사 모든 프로젝트에 Claude Code 기반의 CLAUDE.md를 표준화하여 적용하고, subagent·MCP·settings 등 활용 가이드를 마련해 팀 간 규격화를 이끌고 있습니다. 동시에 n8n을 활용해 자동 이슈 처리기와 반복 업무를 담당하는 워크플로우 에이전트를 개발·확산하며, 특정 인력에게 집중되던 업무를 점차 자동화하고 있습니다. 이를 통해 개발 생산성과 운영 효율을 꾸준히 높이고 있으며, 구성원들이 창의적이고 고부가가치 활동에 집중할 수 있는 환경을 만들어 가고 있습니다.'
   ],
-  sign: 'Tux',
+  sign: 'dongbeom.kim',
   // sign: packageJson.author.name,
-  // latestUpdated: '2019-07-24',
-  latestUpdated: lastestUpdatedAt,
+  latestUpdated: '2025-08-31',
 };
 
 export default introduce;

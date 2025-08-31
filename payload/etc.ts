@@ -5,15 +5,40 @@ const etc: IEtc.Payload = {
 
   list: [
     {
-      title: 'Featured on SuperTuxKart',
-      subTitle: "Steve & Oliver Baker's",
-      startedAt: '2016-07',
+      title: 'Snowflake SnowPro Core Certification',
+      startedAt: '2024-12',
     },
     {
-      title: "Biting Linus Torvalds' Foot",
-      subTitle: 'Australia National Zoo & Aquarium',
-      startedAt: '1993-07',
-      endedAt: '1993-08',
+      title: 'Certified SAFe 6 Scrum Master',
+      startedAt: '2023-05',
+    },
+    {
+      title: 'Certified SAFe 6 PO/PM',
+      startedAt: '2023-03',
+    },
+    {
+      title: 'AWS Certified Solutions Architect - Professional',
+      startedAt: '2021-02',
+    },
+    {
+      title: 'GCP Professional Cloud Architect',
+      startedAt: '2020-06',
+    },
+    {
+      title: 'AWS Certified Solutions Architect - Associate',
+      startedAt: '2020-03',
+    },
+    {
+      title: 'AWS Certified Cloud Practitioner - Foundational',
+      startedAt: '2020-02',
+    },
+    {
+      title: 'SQLD (SQL Developer)',
+      startedAt: '2019-09',
+    },
+    {
+      title: '정보처리기사 (Engineer Information Processing)',
+      startedAt: '2019-05',
     },
   ],
 };
