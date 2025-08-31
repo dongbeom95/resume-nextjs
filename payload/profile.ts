@@ -2,30 +2,31 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { IProfile } from '../component/profile/IProfile';
-import MyProfileImage from '../asset/1751332566840.jpeg';
 
 const profile: IProfile.Payload = {
   disable: false,
 
-  image: MyProfileImage,
+  image: '/profile.jpeg', // public/profile.jpeg
+
   name: {
     title: '김동범',
-    small: '한줄 소개',
+    small: 'Momentum Driver · Platform Engineer',
   },
   contact: [
     {
       title: 'rlavkgk123@naver.com',
-      link: 'rlavkgk123@naver.com',
+      link: 'mailto:rlavkgk123@naver.com',
       icon: faEnvelope,
     },
     {
+      title: 'LinkedIn',
       link: 'https://www.linkedin.com/in/dongbeom-kim-719738308',
       icon: faLinkedin,
     },
   ],
+  // ✅ notice는 객체로 제공 (내용이 없어도 안전)
   notice: {
-    title:
-      "The content below is all fictitious and is just a sample from 'https://github.com/uyu423/resume-nextjs'.",
+    title: '',
     icon: faBell,
   },
 };
