@@ -8,7 +8,7 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''; // '' (dev) or '/<rep
 const profile: IProfile.Payload = {
   disable: false,
 
-  image: `${BASE_PATH}/profile.jpeg`, // ✅ 배포시 '/<repo>/profile.jpeg' 로 요청됨
+  image: `${BASE_PATH}/asset/profile.jpeg`, // ✅ 배포시 '/resume-nextjs/asset/profile.jpeg' 로 요청됨
 
   name: {
     title: '김동범',
