@@ -3,7 +3,7 @@ import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { IProfile } from '../component/profile/IProfile';
 
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''; // '' (dev) or '/<repo>' (prod)
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/resume-nextjs' : ''); // '' (dev) or '/resume-nextjs' (prod)
 
 const profile: IProfile.Payload = {
   disable: false,
