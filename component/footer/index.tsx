@@ -8,7 +8,7 @@ export const Footer = {
   Component,
 };
 
-function Component({ payload }: PropsWithChildren<{ payload: IFooter.Payload }>) {
+function Component({ payload: _payload }: PropsWithChildren<{ payload: IFooter.Payload }>) {
   return (
     <Row>
       <Col>
