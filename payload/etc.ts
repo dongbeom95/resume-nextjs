@@ -20,6 +20,11 @@ const etc: IEtc.Payload = {
         startedAt: '2023-03',
       },
       {
+        title: 'AC2 Patch : Essence of Agility',
+        subTitle: '김창준',
+        startedAt: '2022-04',
+      },
+      {
         title: 'AWS Certified Solutions Architect - Professional',
         subTitle: 'Amazon Web Services',
         startedAt: '2021-02',

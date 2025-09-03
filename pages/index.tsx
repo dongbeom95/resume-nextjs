@@ -34,8 +34,8 @@ function Yosume() {
         <OpenSource.Component payload={Payload.openSource} />
         <Presentation.Component payload={Payload.presentation} />
         <Article.Component payload={Payload.article} />
-        <Education.Component payload={Payload.education} />
         <Etc.Component payload={Payload.etc} />
+        <Education.Component payload={Payload.education} />
         <Footer.Component payload={Payload.footer} />
       </Container>
     </>

@@ -34,8 +34,8 @@ const Payload: Payload = {
   project,
   presentation,
   article,
-  education,
   etc,
+  education,
   footer,
 
   _global,
@@ -49,9 +49,9 @@ interface Payload {
   experience: IExperience.Payload;
   project: IProject.Payload;
   presentation: IPresentation.Payload;
-  education: IEducation.Payload;
   article: IArticle.Payload;
   etc: IEtc.Payload;
+  education: IEducation.Payload;
   footer: IFooter.Payload;
 
   _global: IGlobal.Payload;

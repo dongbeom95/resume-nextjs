@@ -29,6 +29,14 @@ export declare namespace IPresentation {
      */
     at: string;
 
+    /**
+     * ### 발표 종료 시점 (선택사항)
+     *
+     * @format YYYY-MM
+     * @example '2010-12'
+     */
+    endedAt?: string;
+
     /** ### 발표 설명 */
     descriptions: IRow.Description[];
   }

@@ -1,141 +1,69 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const programmingLanguages: ISkill.Skill = {
-  category: 'Programming Languages',
+const languages: ISkill.Skill = {
+  category: 'Languages',
   items: [
-    { title: 'C' },
     { title: 'Java' },
-    { title: 'Kotlin' },
-    { title: 'JavaScript' },
     { title: 'TypeScript' },
-    { title: 'Python' },
-    { title: 'Golang' },
-    { title: 'Rust' },
+    { title: 'JavaScript' },
     { title: 'SQL' },
   ],
 };
 
-const kernelDevelopment: ISkill.Skill = {
-  category: 'Kernel Development',
+const frameworks: ISkill.Skill = {
+  category: 'Frameworks & Libraries',
   items: [
-    {
-      title: 'Kernel Programming',
-    },
-    {
-      title: 'GNU Debugger',
-    },
-    {
-      title: 'Memory Management',
-    },
-    {
-      title: 'System Call Interface',
-    },
+    { title: 'Spring Boot' },
+    { title: 'Vue.js' },
+    { title: 'Keycloak' },
   ],
 };
 
-const virtualization: ISkill.Skill = {
-  category: 'Virtualization',
+const infrastructure: ISkill.Skill = {
+  category: 'Infrastructure & Databases',
   items: [
-    {
-      title: 'Docker',
-    },
-    {
-      title: 'KVM',
-    },
-    {
-      title: 'Xen',
-    },
-    {
-      title: 'VirtualBox',
-    },
-    {
-      title: 'VMware ESXi',
-    },
+    { title: 'AWS ECS' },
+    { title: 'AWS MSK' },
+    { title: 'AWS API Gateway' },
+    { title: 'MySQL' },
+    { title: 'Redis' },
+    { title: 'Debezium (CDC)' },
+    { title: 'Rabbit MQ' },
   ],
 };
 
-const automation: ISkill.Skill = {
-  category: 'Automation',
+const tools: ISkill.Skill = {
+  category: 'Tools & IDEs',
   items: [
-    {
-      title: 'Ansible',
-    },
-    {
-      title: 'Puppet',
-    },
-    {
-      title: 'Chef',
-    },
-    {
-      title: 'Jenkins',
-    },
-    {
-      title: 'CI/CD Pipelines',
-    },
-    {
-      title: 'Infrastructure as Code',
-    },
+    { title: 'Claude Code' },
+    { title: 'Gemini CLI' },
+    { title: 'n8n' },
+    { title: 'IntelliJ IDEA' },
+    { title: 'Jira' },
+    { title: 'Confluence' },
   ],
 };
 
-const networkSecurity: ISkill.Skill = {
-  category: 'Network Security',
+const security: ISkill.Skill = {
+  category: 'Security & Authentication',
   items: [
-    {
-      title: 'iptables',
-    },
-    {
-      title: 'OpenSSH',
-    },
-    {
-      title: 'OpenSSL',
-    },
-    {
-      title: 'NACLs',
-    },
-    {
-      title: 'VPN Technologies',
-    },
-    {
-      title: 'Intrusion Detection',
-    },
+    { title: 'OAuth2' },
+    { title: 'SAML' },
+    { title: 'SSO' },
   ],
 };
 
-const misc: ISkill.Skill = {
-  category: 'Misc',
+const methodology: ISkill.Skill = {
+  category: 'Methodology',
   items: [
-    {
-      title: 'Coffee Brewing',
-    },
-    {
-      title: "Rubik's Cube Solving",
-    },
-    {
-      title: 'Table Tennis',
-    },
-    {
-      title: 'Guitar Playing',
-    },
-    {
-      title: 'Joke Telling',
-    },
-    {
-      title: 'Duct Tape Crafting',
-    },
+    { title: 'Agile' },
+    { title: 'Scrum' },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [
-    programmingLanguages,
-    kernelDevelopment,
-    virtualization,
-    automation,
-    networkSecurity,
-    misc,
-  ],
+  skills: [languages, frameworks, infrastructure, tools, security, methodology],
 };
 
 export default skill;
