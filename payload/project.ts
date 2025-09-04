@@ -6,18 +6,36 @@ const project: IProject.Payload = {
     {
       title: 'AI 내재화 프로젝트',
       startedAt: '2025-05',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Momentum Driver',
       descriptions: [
         { content: '조직 차원의 AI 내재화 전략 수립 및 실행, 생산성 혁신 주도' },
-        { content: 'Claude Code 기반 CLAUDE.md 전사 표준화 적용' },
-        { content: 'subagent·MCP·settings 가이드 마련 및 팀 간 규격화' },
-        { content: 'n8n 기반 자동 이슈 처리기·반복 업무 워크플로우 에이전트 설계·개발' },
+        { content: 'Claude Code 기반 CLAUDE.md 팀별 표준화 적용',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: 'md 파일의 최적화 방법 연구 및 적용' },
+            { content: '문서 인덱스, Reflection 커맨드 적용을 통한 md파일 형상관리 배포' },
+          ],
+        },
+        { content: 'Subagent·MCP·Settings 가이드 마련 및 팀 간 규격화',
+          descriptions: [
+            { content: 'Subagent, mcp, command 등 상황별 적용 방법 공유' },
+            { content: 'local (사용자), project 레벨별 claude 설정 규격화' },
+          ],
+        },
+        { content: 'n8n 기반 자동 이슈 처리기·반복 업무 워크플로우 에이전트 설계·개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: 'GWS 기반 일정 관리 Agent 개발 및 공유' },
+            { content: 'Git hook 트리거를 통한 Code 리뷰 Agent 개발 및 공유' },
+          ],
+        },
         {
           content: 'LLM·RAG 학습 워크숍을 통해 개발 문화 혁신 및 AI 활용 기반 마련',
           weight: 'MEDIUM',
           descriptions: [
             { content: 'Vector DB·유사도 검색 구조 이해와 실습 공유' },
-            { content: '팀원 대상 AI 활용 사례 전파 및 가이드' },
+            { content: '팀원 대상 RAG와 Vector DB를 적용한 LLM 모델 차이점 hands-on 워크숍 진행' },
+            { content: '워크숍 이후 팀원들이 AI 기반 서비스 아키텍처 설계·개발의 전체 흐름(데이터 저장, RAG, 에이전트 자동화 등)을 스스로 구상' },
           ],
         },
       ],
@@ -25,7 +43,7 @@ const project: IProject.Payload = {
     {
       title: 'EDA 기반 플랫폼 아키텍처 현대화',
       startedAt: '2025-01',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Momentum Driver',
       descriptions: [
         { content: 'AWS MSK + Debezium 기반 CDC 아키텍처 설계 및 이벤트 기반 동기화 개발' },
         {
@@ -60,7 +78,7 @@ const project: IProject.Payload = {
       title: '2024 Legacy Modernization 및 이중화 SSO 인프라 구축',
       startedAt: '2024-01',
       endedAt: '2024-07',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: 'SSO 통합 완성 및 외부 플랫폼 연동 확장' },
         {
@@ -98,7 +116,7 @@ const project: IProject.Payload = {
       title: 'AWS Marketplace 과금 시스템',
       startedAt: '2024-02',
       endedAt: '2024-03',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: 'AWS Marketplace 등록 및 과금 Batch 시스템 개발' },
         { content: 'OpsNow 신규 판매채널 및 고객 결제 방법 추가' },
@@ -108,7 +126,7 @@ const project: IProject.Payload = {
       title: 'API Gateway 전환 (MSA)',
       startedAt: '2024-02',
       endedAt: '2024-03',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: 'Nginx Proxy → AWS API Gateway 전환, 12개 도메인 통합 관리' },
         { content: '규격화 되어있지 않던 서비스별 API 호출 구조 전면 개편' },
@@ -119,7 +137,7 @@ const project: IProject.Payload = {
       title: '멀티 클라우드 계정 헬스체크 시스템',
       startedAt: '2023-08',
       endedAt: '2023-09',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: 'AWS/GCP/NCP/OCI/Azure 벤더 5개 연동, 시간별 2만+ 계정 헬스체크 개발' },
         { content: 'Completable Future 기반의 벤더별 비동기 병렬 SDK 호출 개발' },
@@ -131,7 +149,7 @@ const project: IProject.Payload = {
       title: '데일리 피드 기능',
       startedAt: '2023-04',
       endedAt: '2023-07',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: '8개 핵심 서비스 항목 기반 이메일, 대시보드 알림/위젯 개발' },
         { content: 'Rabbit MQ를 사용한 서비스별 데이터 수집 및 적재 Batch 개발' },
@@ -142,7 +160,7 @@ const project: IProject.Payload = {
       title: '2023 멀티 상품 통합 플랫폼 구축',
       startedAt: '2022-09',
       endedAt: '2023-07',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: '통합 대시보드 런칭, 화이트라벨 자동화 및 Keycloak 업그레이드' },
         {
@@ -180,7 +198,7 @@ const project: IProject.Payload = {
       title: 'ISMS-P/CSAP 컴플라이언스 대응',
       startedAt: '2022-03',
       endedAt: '2022-07',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: 'ISMS-P/CSAP 컴플라이언스 취득을 위한 전사 보안 정책 적용 및 보안 위험 요소 개선' },
         {
@@ -233,7 +251,7 @@ const project: IProject.Payload = {
       title: 'User Tracking 시스템',
       startedAt: '2022-03',
       endedAt: '2022-04',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: '전사 사이트 GTM 코드 설계·배포, GA Report 작성' },
         { content: 'MS Clarity 연동을 통한 히트맵·세션 리플레이 기능 도입' },
@@ -244,7 +262,7 @@ const project: IProject.Payload = {
       title: 'Keycloak 기반 통합 인증 플랫폼 구축',
       startedAt: '2022-01',
       endedAt: '2022-08',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Scrum Master',
       descriptions: [
         { content: 'SpringSecurity → Keycloak 전환 및 ISMS-P/CSAP 컴플라이언스 대응' },
         {
@@ -287,7 +305,7 @@ const project: IProject.Payload = {
       title: 'Resource Scheduler',
       startedAt: '2021-12',
       endedAt: '2022-02',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Full-Stack Engineer',
       descriptions: [
         { content: '태깅 기반 EC2 자동 시작·종료 스케줄링 기능 개발' },
         { content: 'Completable Future 기반의 비동기 인스턴스 Start/Stop 개발' },
@@ -299,7 +317,7 @@ const project: IProject.Payload = {
       title: 'API 사용량 대시보드 (내부 Admin)',
       startedAt: '2020-10',
       endedAt: '2020-12',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Full-Stack Engineer',
       descriptions: [
         { content: '전사 API 호출량/오류/추이 시각화, 실시간 모니터링 대시보드 개발' },
         { content: 'Vue.js, AmChart4를 사용한 대시보드 및 Java 기반 API 개발' },
@@ -310,7 +328,7 @@ const project: IProject.Payload = {
       title: 'OpenAPI 서비스',
       startedAt: '2020-04',
       endedAt: '2020-06',
-      where: 'OpsNow Platform',
+      where: 'OpsNow Platform / Full-Stack Engineer',
       descriptions: [
         { content: 'Asset/Cost/Portal 등 각 서비스별 20+ OpenAPI 설계·구축' },
         { content: 'AWS Gateway + S3 배포' },

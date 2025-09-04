@@ -21,18 +21,28 @@ const presentation: IPresentation.Payload = {
       ],
     },
     {
-      title: 'Agile 스터디 & 조직 개선 활동',
+      title: 'Agile 스터디 & SAFe 도입',
       subTitle: 'Bespinglobal / Facilitator & Organizer',
       at: '2023-06',
       descriptions: [
         {
           content: '타 회사 애자일 코치들과 협업한 크로스 조직 애자일 스터디 참여',
+          weight: 'MEDIUM',
         },
         {
           content: '각 조직별 애자일 도입 사례 및 문화 정착 경험 공유, 실무 적용 방안 논의',
         },
         {
           content: 'SAFe 자격 취득 및 사내 Scaled Agile Framework 도입·적용',
+          weight: 'MEDIUM',
+          descriptions: [
+            {
+              content: '현재 상황에 맞춘 경량화 PI Planning 리딩',
+            },
+            {
+              content: '스크럼간 대규모 플래닝 퍼실리테이션 진행',
+            },
+          ],
         },
         {
           content: '세레모니 및 워크숍 퍼실리테이션, 조직 내 애자일 문화 확산 주도',
